@@ -41,7 +41,7 @@ export function Hero() {
                 className="gap-2 border-blue-300 text-blue-600 hover:bg-blue-800"
               >
                 <Download className="w-4 h-4" />
-                <a href="/sivaraman2_resume.pdf" download>
+                <a href="/sivaraman_frontend.pdf" download>
                   Download CV
                 </a>
               </Button>
