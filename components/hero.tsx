@@ -13,12 +13,12 @@ export function Hero() {
                 Hi, I`m <span className="text-blue-300">Sivaraman N</span>
               </h1>
               <h2 className="text-xl sm:text-2xl text-blue-200">
-                Frontend Developer
+              MERN Stack Developer
               </h2>
               <p className="text-lg text-blue-100 max-w-2xl">
-                I have strong experience in frontend development using ReactJS,
-                NextJS, TailwindCSS, and Zustand, focusing on building scalable,
-                responsive applications. I`ve worked on complex UI modules like
+                I have strong experience in MERN Stack development using ReactJS,
+                NextJS, TailwindCSS, Expressjs, MongoDB and Zustand, focusing on building scalable,
+                responsive applications. I`ve worked on complex  modules like Bulk Upload feature, CRUD Table operation,
                 Image Annotation tools and admin dashboards.
               </p>
               <div className="flex items-center gap-2 text-blue-200">
@@ -28,6 +28,7 @@ export function Hero() {
             </div>
 
             <div className="flex flex-wrap gap-4">
+              <a href="#contact">
               <Button
                 size="lg"
                 className="gap-2 bg-white text-blue-900 hover:bg-blue-50"
@@ -35,13 +36,14 @@ export function Hero() {
                 <Mail className="w-4 h-4" />
                 Get In Touch
               </Button>
+              </a>
               <Button
                 variant="outline"
                 size="lg"
                 className="gap-2 border-blue-300 text-blue-600 hover:bg-blue-800"
               >
                 <Download className="w-4 h-4" />
-                <a href="/sivaraman_frontend.pdf" download>
+                <a href="/Sivaraman_Full.pdf" download>
                   Download CV
                 </a>
               </Button>

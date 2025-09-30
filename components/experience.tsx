@@ -5,12 +5,12 @@ import { CalendarDays, MapPin, Building } from 'lucide-react'
 export function Experience() {
   const experiences = [
     {
-      title: "Front-End Developer",
+      title: "MERN Stack Developer",
       company: "Talentship Pvt Ltd",
       location: "Chennai, Tamil Nadu",
       period: "August 2024 - Present",
       description: "Developed front-end applications using ReactJS, NextJS, TailwindCSS, and Zustand for state management. Built dynamic UIs with reusable components, server-side rendering (SSR), and optimized performance. Implemented KonvaJS for interactive image annotation with dynamic shapes and labels. Designed responsive dashboards with CRUD operations, reusable UI components, and managed complex UI states efficiently.",
-      technologies: ["ReactJS", "NextJS", "TailwindCSS", "Zustand", "KonvaJS", "SSR"]
+      technologies: ["JavaScript","TypeScript","ReactJS", "NextJS", "TailwindCSS", "Zustand", "KonvaJS", "SSR"]
     }
   ]
 

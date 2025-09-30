@@ -10,10 +10,9 @@ export function About() {
             About Me
           </h2>
           <p className="text-lg text-blue-700 max-w-3xl mx-auto">
-            I`m a passionate frontend developer with expertise in modern web
-            technologies. I love creating interactive user interfaces and
-            optimizing web performance through techniques like lazy loading and
-            code splitting.
+          I am a passionate MERN stack developer with nearly 2 years of hands-on experience in building dynamic, responsive, and user-friendly web applications. I hold a Master of Computer Applications, which provided me with a strong foundation in software development and problem-solving.
+My expertise lies in React.js, Next.js, and modern frontend technologies, and I have recently expanded my skill set to include Node.js, Express.js, and MongoDB for full-stack development. I have worked on diverse projects, including AR/VR solutions, which strengthened my ability to deliver innovative and scalable solutions.
+I thrive in collaborative environments, adapt quickly to new challenges, and stay updated with the latest industry trends. I am now seeking opportunities as a MERN stack developer to leverage my frontend expertise and growing backend knowledge to contribute to impactful, end-to-end solutions.
           </p>
         </div>
 
@@ -71,13 +70,12 @@ export function About() {
           <p className="text-blue-700 leading-relaxed">
             I have completed my
             Master of Computer Applications from Christ College of Engineering
-            Technology and have been working as a Frontend Developer at
+            Technology and have been working as a MERN Stack Developer at
             Talentship Pvt Ltd since August 2024. My journey includes developing
             dynamic user interfaces with reusable components, implementing
             server-side rendering (SSR), and contributing to innovative projects
             such as AR/VR platforms and admin dashboards with CRUD
-            operations.Let me know if you want a shorter version or tailored for
-            a resume or LinkedIn summary.
+            operations.
           </p>
         </div>
       </div>

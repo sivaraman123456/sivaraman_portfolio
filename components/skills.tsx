@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export function Skills() {
   const skillCategories = [
     {
-      title: "Frontend Frameworks",
-      skills: ["ReactJS", "NextJS", "Zustand"]
+      title: "MERN Stack Frameworks",
+      skills: ["ReactJS", "NextJS", "Expressjs","Nodejs","MongoDB"]
     },
     {
       title: "Languages",
