@@ -87,7 +87,7 @@ export function Hero() {
               <div className="w-80 h-80 rounded-full bg-blue-800/50 flex items-center justify-center backdrop-blur-sm border border-blue-700">
                 <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-blue-300">
                   <Image
-                    src="/sivaraman-photo.jpg"
+                    src="/sivaraman.jpg"
                     alt="Sivaraman N"
                     width={300}
                     height={300}
