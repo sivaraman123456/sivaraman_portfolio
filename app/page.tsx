@@ -1,17 +1,17 @@
-import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
-import { About } from "@/components/about"
-import { Skills } from "@/components/skills"
-import { Projects } from "@/components/projects"
-import { Experience } from "@/components/experience"
-import { Contact } from "@/components/contact"
-import { Footer } from "@/components/footer"
+import { Header } from "@/components/header";
+import { Hero } from "@/components/hero";
+import { About } from "@/components/about";
+import { Skills } from "@/components/skills";
+import { Projects } from "@/components/projects";
+import { Experience } from "@/components/experience";
+import { Contact } from "@/components/contact";
+import { Footer } from "@/components/footer";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col">
       <Header />
-      <main>
+      <main className="flex-grow">
         <Hero />
         <About />
         <Skills />
@@ -21,5 +21,5 @@ export default function Portfolio() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
