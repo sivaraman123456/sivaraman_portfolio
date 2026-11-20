@@ -12,7 +12,7 @@ import {
 export function Experience() {
   const experiences = [
     {
-      role: "Frontend Developer",
+      role: "Full Stack Developer",
       company: "Pixel Mind IT Solutions",
       project: "Gymnago – Gym Management SaaS & E-commerce Platform",
       period: "Oct 2025 – Present",
@@ -33,7 +33,8 @@ export function Experience() {
         "Redux Toolkit",
         "Node.js",
         "Express.js",
-        "IndexedDB"
+        "IndexedDB",
+        'MongoDB'
       ],
     },
     {

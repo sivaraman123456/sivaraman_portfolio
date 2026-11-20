@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Sivaraman | Full Stack Developer (React.js • Node.js)",
     description:
       "Full Stack Developer with 3 years of experience building scalable web applications, e-commerce platforms, and real-time dashboards.",
-    url: "https://sivaraman-portfolio.vercel.app",
+    url: "https://sivaraman-portfolio-jg3s.vercel.app/",
     siteName: "Sivaraman Portfolio",
     type: "website",
   },

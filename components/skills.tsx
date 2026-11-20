@@ -22,7 +22,6 @@ export function Skills() {
         "HTML5",
         "CSS3",
         "Tailwind CSS",
-        "Material UI",
         "Server-Side Rendering (SSR)",
         "Client-Side Hydration",
       ],
@@ -36,7 +35,6 @@ export function Skills() {
         "Express.js",
         "REST API Development",
         "API Integration & Webhooks",
-        "Payment Gateway Integration",
         "Postman",
         "Authentication & JWT",
         "Error Handling & Validation",
@@ -48,7 +46,6 @@ export function Skills() {
       color: "border-emerald-500/20 bg-emerald-500/5",
       skills: [
         "Redux Toolkit",
-        "Zustand",
         "Context API",
         "IndexedDB (Client Caching)",
         "MongoDB",
@@ -66,8 +63,7 @@ export function Skills() {
         "GitHub",
         "Webpack",
         "ESLint",
-        "Prettier",
-        "Turbopack / Vite",
+        "Prettier"
       ],
     },
     {

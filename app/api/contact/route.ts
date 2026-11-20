@@ -49,9 +49,12 @@ export async function POST(request: Request) {
 
     // 1. Save to MongoDB (if configured)
     let savedToDb = false;
+    let dbErrorMessage = "";
     try {
       const db = await connectToDatabase();
-      if (db) {
+      if (!db) {
+        dbErrorMessage = "MongoDB URI is not configured.";
+      } else {
         await Contact.create({
           name: cleanName,
           email: cleanEmail,
@@ -61,8 +64,8 @@ export async function POST(request: Request) {
         savedToDb = true;
       }
     } catch (dbError) {
+      dbErrorMessage = dbError instanceof Error ? dbError.message : "Database error";
       console.error("Failed to save contact to MongoDB:", dbError);
-      // We don't fail immediately, we can still attempt email dispatch
     }
 
     // 2. Send email notification & visitor auto-reply
@@ -78,7 +81,25 @@ export async function POST(request: Request) {
         message: cleanMessage,
       });
     } catch (emailError) {
+      const errMsg = emailError instanceof Error ? emailError.message : "Email error";
+      emailStatus = { sent: false, reason: errMsg };
       console.error("Failed to send notification email:", emailError);
+    }
+
+    if (!savedToDb && !emailStatus.sent) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: `Unable to save message or send email. DB: ${dbErrorMessage || "failed"} | Email: ${emailStatus.reason || "failed"}`,
+          data: {
+            savedToDb: false,
+            emailSent: false,
+            dbError: dbErrorMessage,
+            emailError: emailStatus.reason,
+          },
+        },
+        { status: 500 }
+      );
     }
 
     return NextResponse.json(
@@ -88,6 +109,8 @@ export async function POST(request: Request) {
         data: {
           savedToDb,
           emailSent: emailStatus.sent,
+          ...(dbErrorMessage && { dbNotice: dbErrorMessage }),
+          ...(!emailStatus.sent && { emailNotice: emailStatus.reason }),
         },
       },
       { status: 200 }

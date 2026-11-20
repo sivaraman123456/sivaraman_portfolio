@@ -26,7 +26,9 @@ export async function sendContactNotification({
   }
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
       user,
       pass,
@@ -80,7 +82,7 @@ export async function sendContactNotification({
         Best regards,<br/>
         <strong>Sivaraman</strong><br/>
         Full Stack Developer (React.js • Node.js)<br/>
-        <a href="https://sivaraman-portfolio.vercel.app" style="color: #2563eb;">sivaraman-portfolio.vercel.app</a>
+        <a href="https://sivaraman-portfolio-jg3s.vercel.app/" style="color: #2563eb;">sivaraman-portfolio.vercel.app</a>
       </p>
     </div>
   `;
