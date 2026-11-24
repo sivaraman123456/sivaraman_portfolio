@@ -82,7 +82,7 @@ export async function sendContactNotification({
         Best regards,<br/>
         <strong>Sivaraman</strong><br/>
         Full Stack Developer (React.js • Node.js)<br/>
-        <a href="https://sivaraman-portfolio-jg3s.vercel.app/" style="color: #2563eb;">sivaraman-portfolio.vercel.app</a>
+        <a href="https://sivaraman-portfolio-2ty4.vercel.app/" style="color: #2563eb;">sivaraman-portfolio.vercel.app</a>
       </p>
     </div>
   `;
